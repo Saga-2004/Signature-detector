@@ -1,38 +1,115 @@
 # NimitAI Signal Detector
-A production-ready full-stack web app that analyzes sales meeting transcripts and extracts actionable signals using AI.
 
-**LLM Used**: Google Gemini API → `gemini-2.5-flash` model (via `@google/genai` SDK)
+A simple AI-powered web application that analyzes sales meeting transcripts and identifies important conversation signals such as buying interest, objections, confusion, and follow-up requests. The application also provides a short coaching tip for each detected signal.
 
-## Setup
+## Features
+
+* Paste any sales meeting transcript
+* AI-powered transcript analysis
+* Detects:
+
+  * Buying Interest
+  * Objections
+  * Confusion
+  * Positive Sentiment
+  * Negative Sentiment
+  * Follow-up Requests
+* Displays results as easy-to-read cards
+* Returns structured JSON responses
+
+## Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* Axios
 
 ### Backend
-```bash
+
+* Node.js
+* Express.js
+
+### AI Model
+
+* Google Gemini 2.5 Flash
+
+## Project Structure
+
+nimitai-signal-detector/
+
+├── frontend/
+
+├── backend/
+
+└── README.md
+
+## Installation & Setup
+
+### Clone Repository
+
+git clone <repository-url>
+
+cd nimitai-signal-detector
+
+### Backend Setup
+
 cd backend
-npm install
-```
-Add your Google Gemini API key to `.env`.
-Get a free key at: [Google AI Studio](https://aistudio.google.com/app/apikey)
 
-```env
-GEMINI_API_KEY=your_gemini_api_key_here
+npm install
+
+Create a `.env` file:
+
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+
 PORT=3000
-```
 
-Start the backend server:
-```bash
+Start backend:
+
 npm start
-```
-Server runs at http://localhost:3000
 
-### Frontend (new terminal)
-```bash
+### Frontend Setup
+
 cd frontend
-npm install
-npm run dev
-```
-Opens at http://localhost:5173
 
-## API
-- `POST /analyse` 
-- Body: `{ "transcript": "..." }` 
-- Returns: `{ "signals": [...] }`
+npm install
+
+npm run dev
+
+## API Endpoint
+
+### POST /analyse
+
+Request:
+
+{
+"transcript": "Your meeting transcript here"
+}
+
+Response:
+
+{
+"signals": [
+{
+"type": "buying_interest",
+"quote": "That's actually interesting",
+"tip": "Ask about their timeline now"
+}
+]
+}
+
+## Example Signals
+
+* buying_interest
+* objection
+* confusion
+* positive_sentiment
+* negative_sentiment
+* follow_up_request
+
+## Assignment Information
+
+This project was created as part of the NimitAI Intern Assignment.
+
+The application analyzes meeting transcripts and extracts actionable sales signals using Google Gemini 2.5 Flash.
