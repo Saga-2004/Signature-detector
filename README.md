@@ -1,4 +1,4 @@
-# NimitAI Signal Detector
+# Sales Insight Analyzer
  
 A sleek AI‑powered web app that analyses sales‑meeting transcripts to surface actionable signals.
 **Live demo:** https://signature-detector-nu.vercel.app/

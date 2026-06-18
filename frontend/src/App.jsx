@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="min-h-screen p-8 text-brown-900 flex flex-col items-center">
       <header className="text-center mb-10">
-        <h1 className="text-5xl font-display font-bold text-brown-500">NimitAI</h1>
+        <h1 className="text-5xl font-display font-bold text-brown-500">Sales Insight Analyzer</h1>
         <p className="text-lg font-bold text-brown-600 uppercase tracking-widest mt-1">
           Sales Signal Detector
         </p>
