@@ -1,6 +1,7 @@
 # NimitAI Signal Detector
-
-A simple AI-powered web application that analyzes sales meeting transcripts and identifies important conversation signals such as buying interest, objections, confusion, and follow-up requests. The application also provides a short coaching tip for each detected signal.
+ 
+A sleek AI‑powered web app that analyses sales‑meeting transcripts to surface actionable signals.
+**Live demo:** https://signature-detector-nu.vercel.app/
 
 ## Features
 
