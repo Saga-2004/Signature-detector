@@ -26,11 +26,11 @@ function App() {
     setSignals([]);
 
     try {
-      const response = await fetch('/analyse', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ transcript }),
-      });
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/analyse`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ transcript })
+});
 
       const data = await response.json();
 
